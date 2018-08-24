@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+head
+	//- Meta
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	//- Title
+	<title>TechnicallyFit - Coming Soon</title>
+	//- CSS
+	link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/technicallyfit/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/technicallyfit/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/technicallyfit/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/technicallyfit/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/technicallyfit/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/technicallyfit/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/technicallyfit/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/technicallyfit/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/technicallyfit/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/images/technicallyfit/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/technicallyfit/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/technicallyfit/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/technicallyfit/favicon-16x16.png">
+	<link rel="manifest" href="/images/technicallyfit/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="/stylesheets/technicallyfit/main-green.css" id="color-switcher">
+	<link rel="stylesheet" href="/stylesheets/technicallyfit/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="/stylesheets/technicallyfit/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/message.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,700">
+	<link rel="stylesheet" href="/stylesheets/technicallyfit/custom.css">
+
+	//- Favicon
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	//- Fonts
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Righteous" rel="stylesheet">
+</head>
+<body>
+	//- Hero
+	<div class="hero" id="particles-js">
+		<div class="centered">
+			<img class="logo animated infinite pulse" src="/images/technicallyfit/tfitBanner2.png" alt="PULSE">
+			//- <h1 class="title tfit">TechnicallyFit</h1>
+			if (newFollower && newFollower.length > 0)
+				div(class="ui floating positive message" style="text-align: center;")= newFollower
+			<h2 class="heading">Coming Soon</h2>
+			<div class="countdown" id="countdown"></div>
+			<p class="description">
+			| Our mission is to assist you in leading a healthy, productive lifestyle through the combined use of digital technology and personalized health experiences.
+			</p>
+			<p class="description">
+			| So join us on our journey to discover the unwritten rules of being <strong class="tfit standOut">Technically</strong> savvy while
+			| being physically <strong class="tfit standOut">Fit</strong>.
+			</p>
+			<div class="buttons">
+				<a id="know-more-button" href="#" class="button btn-round btn-solid">Read More</a>
+				<a id="subscribe-button" href="#" class="button btn-round btn-ghost">Subscribe</a>
+			</div>
+		</div>
+		<div class="social-text">
+			//- <a href="#">Facebook</a>
+			<a href="https://urlgeni.us/twitter/FeEN">Twitter</a>
+			<a href="https://urlgeni.us/instagram/nsn4">Instagram</a>
+			//- <a href="#">Behance</a>
+		</div>
+		<div class="modal modal-subscirbe" id="subscribe-modal">
+			<div class="content">
+				<h2>Subscribe &amp; Stay Updated</h2>
+				<p>When we release our first version of TechnicallyFit, you'll be the first to know. Drop your email and stay tuned!</p>
+				<form id="mc-form" class="subscribe-form subscribe-split" action="/" method="POST">
+					<input id="mc-email" type="email" placeholder="Your E-Mail" name="email">
+					<input class="btn-solid" type="submit" value="Notify me">
+					//- <label class="response" for="mc-email">Result</label>
+				</form>
+			</div>
+			<div class="exit" id="subscribe-close">+</div>
+		</div>
+	</div>
+	//- More
+	<div class="more" id="more" data-mcs-theme="minimal-dark">
+		<div class="exit" id="more-close">+</div>
+		//- <h1 class="more-heading tfit">TechnicallyFit</h1>
+		<img class="logo more-heading" style="margin: 40px auto" src="/images/technicallyfit/tfitBanner.png" alt="PULSE">
+		<p class="more-description">
+			| Modern society has shown us that technology and personal health are two inescapable facets of life. Here at TechnicallyFit,
+			| we leverage these two inescapable facets of life for your overall well-being.
+		</p>
+		<p class="more-description">
+			| TechnicallyFit seeks to empower, encourage, and enlighten. If you aren't interested in signing up and hearing from us
+			| when we drop version one, we'd appreciate it if you could share this with <strong class="tfit standOut">1</strong> of your friends.
+		</p>
+		
+		//- <h2 class="more-sub-heading">Portfolio</h2>
+		//- <div class="portfolio">
+		//- 	<div class="work">
+		//- 		<div class="work-card">
+		//- 			<div class="content">
+		//- 				<p class="name">Niveau</p>
+		//- 				<a href="#"><i class="fa fa-facebook"></i></a>
+		//- 				<a href="#"><i class="fa fa-twitter"></i></a>
+		//- 				<a href="#"><i class="fa fa-instagram"></i></a>
+		//- 			</div>
+		//- 		</div>
+		//- 	</div>
+		//- 	<div class="work">
+		//- 		<div class="work-card">
+		//- 			<div class="content">
+		//- 				<p class="name">Sparkle</p>
+		//- 				<a href="#"><i class="fa fa-facebook"></i></a>
+		//- 				<a href="#"><i class="fa fa-twitter"></i></a>
+		//- 				<a href="#"><i class="fa fa-instagram"></i></a>
+		//- 			</div>
+		//- 		</div>
+		//- 	</div>
+		//- 	<div class="work">
+		//- 		<div class="work-card">
+		//- 			<div class="content">
+		//- 				<p class="name">Helios</p>
+		//- 				<a href="#"><i class="fa fa-facebook"></i></a>
+		//- 				<a href="#"><i class="fa fa-twitter"></i></a>
+		//- 				<a href="#"><i class="fa fa-instagram"></i></a>
+		//- 			</div>
+		//- 		</div>
+		//- 	</div>
+		//- 	<div class="work">
+		//- 		<div class="work-card">
+		//- 			<div class="content">
+		//- 				<p class="name">Sirius</p>
+		//- 				<a href="#"><i class="fa fa-facebook"></i></a>
+		//- 				<a href="#"><i class="fa fa-twitter"></i></a>
+		//- 				<a href="#"><i class="fa fa-instagram"></i></a>
+		//- 			</div>
+		//- 		</div>
+		//- 	</div>
+		//- </div>
+		<h2 class="more-sub-heading">Contact us</h2>
+		<p class="more-description">You can contact us via email!</p>
+		//- <form action="#" class="contact-form" id="contact-form">
+		//- 	<div class="name">
+		//- 		<label for="name">Name:</label>
+		//- 		<input name="name" id="name" type="text">
+		//- 	</div>
+		//- 	<div class="email">
+		//- 		<label for="email">Email:</label>
+		//- 		<input name="email" id="email" type="email">
+		//- 	</div>
+		//- 	<div class="clearfix"></div>
+		//- 	<div class="message">
+		//- 		<label for="message">Message:</label>
+		//- 		<textarea name="message" id="message" cols="25" rows="10"></textarea>
+		//- 	</div>
+		//- 	<div class="submit">
+		//- 		<input type="submit" value="submit">
+		//- 	</div>
+		//- 	<p id="contact-result" class="contact-result">Empty message</p>
+		//- </form>
+		<h2 class="more-sub-heading">Get in touch</h2>
+		<ul class="info">
+			<li class="info-block">
+				<i class="fa fa-phone"></i>
+				<p>Phone:</p>
+				<p>+1 404-509-2986</p>
+			</li>
+			<li class="info-block">
+				<i class="fa fa-map-marker"></i>
+				<p>Location:</p>
+				<p>Atlanta, GA</p>
+			</li>
+			<li class="info-block">
+				<i class="fa fa-envelope"></i>
+				<p>E-Mail:</p>
+				<p>darian@technicallyfit.io</p>
+			</li>
+		</ul>
+	</div>
+	//- Overlay
+	<div class="overlay" id="overlay"></div>
+	//- Scripts
+	<script src="/javascripts/technicallyfit/jquery-3.1.1.min.js"></script>
+	<script src="/javascripts/technicallyfit/jquery.ajaxchimp.min.js"></script>
+	<script src="/javascripts/technicallyfit/jquery.countdown.min.js"></script>
+	<script src="/javascripts/technicallyfit/jquery.mCustomScrollbar.min.js"></script>
+	<script src="/javascripts/technicallyfit/jquery.backstretch.min.js"></script>
+	<script src="/javascripts/technicallyfit/config.js"></script>
+	<script src="/javascripts/technicallyfit/particles.min.js"></script>
+	<script src="/javascripts/technicallyfit/main.js"></script>
+</body>
+</html>

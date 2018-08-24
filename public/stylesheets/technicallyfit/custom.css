@@ -1,0 +1,13 @@
+body {
+  overflow-x: none;
+}
+
+.tfit {
+  font-family: 'Quicksand', sans-serif;
+  text-transform: none;
+}
+
+.standOut {
+  font-weight: 700;
+  color: #4ae59b;
+}
