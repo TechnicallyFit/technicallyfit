@@ -60,7 +60,7 @@ router.get("/workout", function(req, res) {
       ]
     }
   ];
-  res.render("technicallyfit/workout", { workouts: workouts });
+  res.render("technicallyfit/workout", { workouts: workouts, name: "Darian" });
 }); 
 
 
