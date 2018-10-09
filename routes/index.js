@@ -21,9 +21,9 @@ let workouts = [
       ["Reverse Curls", 4, 10, 30],
       ["EZ Bar Curls", 5, 12, 30],
       ["Tricep Dip (Weighted)", 5, 20, 30],
-      ["Preacher Curls", 5, 100, 30],
+      ["Preacher Curls", 5, 100, 30]
     ]
-  },
+  }
 ]
 
 /* GET home page. */
