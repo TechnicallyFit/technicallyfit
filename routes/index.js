@@ -58,7 +58,8 @@ router.get("/workout", function(req, res) {
         ["Preacher Curls", 5, 100, 30]
       ]
     };
-  res.render("technicallyfit/workout", { workout: workout, name: "Darian" });
+    console.log("Workout: " + workout);
+  res.render("technicallyfit/workout", { name: "Darian" });
 }); 
 
 
