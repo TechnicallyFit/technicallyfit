@@ -5,30 +5,27 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="/stylesheets/technicallyfit/workout.css")
-        title Workout
+        title Workouts
     body
         <div class="wrapper">
         
-            // WORKOUT
-            h1 Hello World
-            h2= name
-        //- h1= workout.day
-        //- each workout in workouts
-        //-     <div class="table">
+        // WORKOUT
+        each workout in workouts
+            <div class="table">
                 
-        //-         div(class="row header")
-        //-             .cell= workout.day
-        //-         div(class="row header")
-        //-             .cell Exercise
-        //-             .cell Sets
-        //-             .cell Reps
-        //-             .cell Rest                
+                div(class="row header")
+                    .cell= workout.day
+                div(class="row header")
+                    .cell Exercise
+                    .cell Sets
+                    .cell Reps
+                    .cell Rest                
                 
-        //-         each exercise in workout.exercise
-        //-             .row
-        //-                 .cell(data-title="Exercise")= exercise[0]
-        //-                 .cell(data-title="Sets")= exercise[1]
-        //-                 .cell(data-title="Reps")= exercise[2]
-        //-                 .cell(data-title="Rest")= exercise[3]
+                each exercise in workout.exercise
+                    .row
+                        .cell(data-title="Exercise")= exercise[0]
+                        .cell(data-title="Sets")= exercise[1]
+                        .cell(data-title="Reps")= exercise[2]
+                        .cell(data-title="Rest")= exercise[3]
                         
         </div>

@@ -39,7 +39,8 @@ router.post("/", function(req, res) {
 });
 
 router.get("/workout", function(req, res) {
-  var workout = {
+  let workouts = [
+    {
       day: "Tuesday",
       category: "Armertins",
       exercise: [
@@ -57,9 +58,9 @@ router.get("/workout", function(req, res) {
         ["Tricep Dip (Weighted)", 5, 20, 30],
         ["Preacher Curls", 5, 100, 30]
       ]
-    };
-    console.log("Workout: " + workout);
-  res.render("technicallyfit/workout", { name: "Darian" });
+    }
+  ];
+  res.render("technicallyfit/workout", { workouts: workouts });
 }); 
 
 
