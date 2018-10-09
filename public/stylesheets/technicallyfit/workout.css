@@ -64,9 +64,6 @@ body {
       display: none;
     }
 
-    .row.header.category .cell {
-      display: block;
-    }
     .row .cell {
       margin-bottom: 10px;
     }
