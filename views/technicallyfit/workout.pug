@@ -11,22 +11,22 @@ html(lang="en")
         
         // WORKOUT
         p= workouts
-        each workout in workouts
-            <div class="table">
+        //- each workout in workouts
+        //-     <div class="table">
                 
-                div(class="row header")
-                    .cell= workout.day
-                div(class="row header")
-                    .cell Exercise
-                    .cell Sets
-                    .cell Reps
-                    .cell Rest                
+        //-         div(class="row header")
+        //-             .cell= workout.day
+        //-         div(class="row header")
+        //-             .cell Exercise
+        //-             .cell Sets
+        //-             .cell Reps
+        //-             .cell Rest                
                 
-                each exercise in workout.exercise
-                    .row
-                        .cell(data-title="Exercise")= exercise[0]
-                        .cell(data-title="Sets")= exercise[1]
-                        .cell(data-title="Reps")= exercise[2]
-                        .cell(data-title="Rest")= exercise[3]
+        //-         each exercise in workout.exercise
+        //-             .row
+        //-                 .cell(data-title="Exercise")= exercise[0]
+        //-                 .cell(data-title="Sets")= exercise[1]
+        //-                 .cell(data-title="Reps")= exercise[2]
+        //-                 .cell(data-title="Rest")= exercise[3]
                         
         </div>
