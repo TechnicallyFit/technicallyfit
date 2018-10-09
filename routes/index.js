@@ -4,27 +4,7 @@ var express           = require("express"),
     TechnicallyFit    = require("../models/technicallyfit");
 
 
-let workouts = [
-  {
-    day: "Tuesday",
-    category: "Armertins",
-    exercise: [
-      // Name, Sets, Reps, Rest
-      ["Cable Front Raise", 4, 20, 30],
-      ["Dumbbell Rear Delt Row", 4, 20, 30],
-      ["Dumbbell Lateral Raises", 3, 25, 30],
-      ["Upright Cable Row", 4, 10, 30],
-      ["Dumbbell Shoulder Press", 5, 12, 30],
-      ["Tricep Pulldowns", 5, 12, 30],
-      ["Bicep Cable Curls", 5, 12, 30],
-      ["EZ Bar Skull Crushers", 4, 10, 30],
-      ["Reverse Curls", 4, 10, 30],
-      ["EZ Bar Curls", 5, 12, 30],
-      ["Tricep Dip (Weighted)", 5, 20, 30],
-      ["Preacher Curls", 5, 100, 30]
-    ]
-  }
-]
+
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
@@ -59,6 +39,27 @@ router.post("/", function(req, res) {
 });
 
 router.get("/workout", function(req, res) {
+  let workouts = [
+    {
+      day: "Tuesday",
+      category: "Armertins",
+      exercise: [
+        // Name, Sets, Reps, Rest
+        ["Cable Front Raise", 4, 20, 30],
+        ["Dumbbell Rear Delt Row", 4, 20, 30],
+        ["Dumbbell Lateral Raises", 3, 25, 30],
+        ["Upright Cable Row", 4, 10, 30],
+        ["Dumbbell Shoulder Press", 5, 12, 30],
+        ["Tricep Pulldowns", 5, 12, 30],
+        ["Bicep Cable Curls", 5, 12, 30],
+        ["EZ Bar Skull Crushers", 4, 10, 30],
+        ["Reverse Curls", 4, 10, 30],
+        ["EZ Bar Curls", 5, 12, 30],
+        ["Tricep Dip (Weighted)", 5, 20, 30],
+        ["Preacher Curls", 5, 100, 30]
+      ]
+    }
+  ];
   res.render("technicallyfit/workout", { workouts: workouts });
 }); 
 
