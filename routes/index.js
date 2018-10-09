@@ -35,5 +35,9 @@ router.post("/", function(req, res) {
   });
 });
 
+router.get("/workout", function(req, res) {
+  res.render("technicallyfit/workout");
+}); 
+
 
 module.exports = router;
