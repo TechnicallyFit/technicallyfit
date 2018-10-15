@@ -41,24 +41,118 @@ router.post("/", function(req, res) {
 router.get("/workout", function(req, res) {
   let workouts = [
     {
-      day: "Tuesday",
-      category: "Armertins",
+      day: "Monday",
+      category: "Pullertins",
       exercise: [
         // Name, Sets, Reps, Rest
-        ["Cable Front Raise", 4, 20, 30],
-        ["Dumbbell Rear Delt Row", 4, 20, 30],
-        ["Dumbbell Lateral Raises", 3, 25, 30],
-        ["Upright Cable Row", 4, 10, 30],
-        ["Dumbbell Shoulder Press", 5, 12, 30],
-        ["Tricep Pulldowns", 5, 12, 30],
+        ["Pullups", 4, 10, 30],
+        ["Deadlift", 4, 10, 30],
+        ["Dumbbell Shrugs", 5, 15, 30],
+        ["Bent Over Barbell Row", 6, 12, 30],
+        ["Seated Wide-Grip Cable Row", 5, 8, 30],
+        ["Seated Close-Grip Lat Pulldown", 4, 10, 30],
+        ["Straight Arm Pulldown", 3, 15, 30],
+        ["Bent Over Dumbell Rear Delt Row", 5, 12, 30],
         ["Bicep Cable Curls", 5, 12, 30],
-        ["EZ Bar Skull Crushers", 4, 10, 30],
+        ["Upright Cable Row", 5, 8, 30],
         ["Reverse Curls", 4, 10, 30],
-        ["EZ Bar Curls", 5, 12, 30],
-        ["Tricep Dip (Weighted)", 5, 20, 30],
-        ["Preacher Curls", 5, 100, 30]
+        ["EZ Bar Curls", 5, 12, 30]
       ]
-    }
+    },
+    {
+      day: "Tuesday",
+      category: "Pushertins",
+      exercise: [
+        // Name, Sets, Reps, Rest
+        ["Barbell Flat Bench Press", 5, 12, 30],
+        ["Barbell Incline Bench Press", 5, 12, 30],
+        ["Chest Fly Machine", 5, 12, 30],
+        ["Shoulder Lateral Raises", 5, 20, 30],
+        ["Dumbbell Shoulder Press", 5, 12, 30],
+        ["Tricep Extensions (Cable)", 5, 12, 30],
+        ["Tricep Dip (Weighted)", 5, 20, 30],
+        ["High-Medium-Low Cable Crossovers", 9, 10, 30],
+        ["Push Ups", 5, 10, 30],
+      ]
+    },
+    {
+      day: "Wednesday",
+      category: "Legertins & Core-tinos",
+      exercise: [
+        // Name, Sets, Reps, Rest
+        ["Leg Press Machine", 8, 10, 30],
+        ["Calve Raises", 8, 10, 30],
+        ["Dumbbell Front Squat", 8, 10, 30],
+        ["Jump Lunges", 8, 10, 30],
+        ["Barbell Squat", 5, 10, 30],
+        ["Single Leg Weighted Lunges", 5, 8, 30],
+        ["Leg Curls", 5, 8, 30],
+        ["Leg Extensions", 5, 8, 30],
+        ["Hip Adductors", 4, 15, 30],
+        ["Hip Abductors", 4, 15, 30],
+        ["Weighted Russian Twist", 5, 10, 30],
+        ["Weighted Sit Ups", 5, 10, 30],
+        ["Weighted Reverse Sit Ups", 5, 10, 30],
+        ["Plank", 5, 45, 30]
+      ]
+    },
+    {
+      day: "Thursday",
+      category: "Pullertins",
+      exercise: [
+        // Name, Sets, Reps, Rest
+        ["Pullups", 4, 10, 30],
+        ["Deadlift", 4, 10, 30],
+        ["Dumbbell Shrugs", 5, 15, 30],
+        ["Bent Over Barbell Row", 6, 12, 30],
+        ["Seated Wide-Grip Cable Row", 5, 8, 30],
+        ["Seated Close-Grip Lat Pulldown", 4, 10, 30],
+        ["Straight Arm Pulldown", 3, 15, 30],
+        ["Bent Over Dumbell Rear Delt Row", 5, 12, 30],
+        ["Bicep Cable Curls", 5, 12, 30],
+        ["Upright Cable Row", 5, 8, 30],
+        ["Reverse Curls", 4, 10, 30],
+        ["EZ Bar Curls", 5, 12, 30]
+      ]
+    },
+    {
+      day: "Friday",
+      category: "Pushertins",
+      exercise: [
+        // Name, Sets, Reps, Rest
+        ["Barbell Flat Bench Press", 5, 12, 30],
+        ["Barbell Incline Bench Press", 5, 12, 30],
+        ["Chest Fly Machine", 5, 12, 30],
+        ["Shoulder Lateral Raises", 5, 20, 30],
+        ["Dumbbell Shoulder Press", 5, 12, 30],
+        ["Tricep Extensions (Cable)", 5, 12, 30],
+        ["Tricep Dip (Weighted)", 5, 20, 30],
+        ["High-Medium-Low Cable Crossovers", 9, 10, 30],
+        ["Push Ups", 5, 10, 30],
+      ]
+    },
+    {
+      day: "Saturday",
+      category: "Legertins & Core-tinos",
+      exercise: [
+        // Name, Sets, Reps, Rest
+        ["Leg Press Machine", 8, 10, 30],
+        ["Calve Raises", 8, 10, 30],
+        ["Dumbbell Front Squat", 8, 10, 30],
+        ["Jump Lunges", 8, 10, 30],
+        ["Barbell Squat", 5, 10, 30],
+        ["Single Leg Weighted Lunges", 5, 8, 30],
+        ["Leg Curls", 5, 8, 30],
+        ["Leg Extensions", 5, 8, 30],
+        ["Hip Adductors", 4, 15, 30],
+        ["Hip Abductors", 4, 15, 30],
+        ["Weighted Russian Twist", 5, 10, 30],
+        ["Weighted Sit Ups", 5, 10, 30],
+        ["Weighted Reverse Sit Ups", 5, 10, 30],
+        ["Plank", 5, 45, 30]
+      ]
+    },
+    
   ];
   res.render("technicallyfit/workout", { workouts: workouts });
 }); 
